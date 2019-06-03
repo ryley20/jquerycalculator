@@ -75,13 +75,66 @@
 
 <script type="text/javascript">
 
-$(document).ready(function() {
+$(document).ready(function() { 
 
 // Your code here...
 //$("number").click(function() {
  //  result = result + "number"
 //})
 
+$(".number").click(function() {
+  console.log(this.value);
+  $("#first-number").text(this.value);
+  //if(this.value).val() ==''){
+   // return false;
+  
+})
+
+$(".operator").click(function() {
+  if(this.value === "times") {
+    console.log("x")
+  }
+  if(this.value === "plus") {
+    console.log("+")
+  }
+  if(this.value === "minus") {
+    console.log("-")
+  }
+  if(this.value === "divide") {
+    console.log("/")
+  }
+  if(this.value === "power")
+  console.log("^")
+})
+
+$(".equal").click(function() {
+  if(this.value === "equals")
+  console.log("=")
+})
+
+
+$(".clear").click(function(){
+  console.log(this.value);
+})
+
+// function ApplyOperation(first-number,second-number , operator) {
+//        var res;
+//        switch (operator) {
+//            case "+":
+//                res = addition(value1, value2);
+//                break;
+//            case "-":
+//                res = subtraction(value1, value2);
+//                break;
+//            case "*":
+//                res = multiplication(value1, value2);
+//                break;
+//            case "/":
+//                res = division(value1, value2);
+//                break;
+//        }
+//        return res;
+// })
 });
 
 </script>
